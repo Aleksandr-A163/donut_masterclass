@@ -11,6 +11,7 @@
 
   @media screen and (min-width: 768px) {
     width: 626px;
+    // display: flex;
   }
 
   position: relative;
@@ -35,6 +36,7 @@
 .reviews-list {
   list-style: none;
   padding: 0;
+  display: flex;
 }
 
 .reviews-list__item {
@@ -65,19 +67,46 @@
 }
 
 .rate {
-  margin-right: auto;
-  margin-left: auto;
   margin-bottom: 32px;
 }
+
+.rate-list {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.rate-list__item {
+  display: block;
+  background-color: tomato;
+  width: 20px;
+  height: 20px;
+
+  &:not(:last-child) {
+    margin-right: 4px;
+  }
+}
+
+// .rate {
+//   margin-right: auto;
+//   margin-left: auto;
+//   margin-bottom: 32px;
+// }
 // .reviews-list__photo {
 // }
+.reviewer {
+  position: relative;
+}
 
-.reviews-list__name {
+.review-card__name {
   position: absolute;
-  top: 179px;
+  bottom: 0;
   left: 50%;
   transform: translateX(-50%);
 
+  margin: 0;
   font-style: italic;
   font-weight: 500;
   font-size: 14px;
