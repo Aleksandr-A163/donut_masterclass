@@ -3,7 +3,7 @@
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://Aleksandr-A163.github.io/donut_masterclass",
+  "homepage": "https://ElbrusYusupov.github.io/donut_masterclass",
   "scripts": {
     "dev": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /donut_masterclass/"
