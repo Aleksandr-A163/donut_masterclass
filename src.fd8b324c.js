@@ -3,4 +3,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{"./../images/bg-top.svg":[["bg-top.eadad073.svg","FiiN"],"FiiN"],"./../images/bg-bottom.svg":[["bg-bottom.1ce27228.svg","sqjq"],"sqjq"],"./../images/flour-mobile.png":[["flour-mobile.1df678a4.png","TDz7"],"TDz7"],"./../images/flour-mobile@2x.png":[["flour-mobile@2x.99739e25.png","LlKj"],"LlKj"],"./../images/flour-tablet.png":[["flour-tablet.04b61a8c.png","LbRm"],"LbRm"],"./../images/flour-tablet@2x.png":[["flour-tablet@2x.addee990.png","dPTa"],"dPTa"],"./../images/flour-desktop.png":[["flour-desktop.13595343.png","aYrl"],"aYrl"],"./../images/flour-desktop@2x.png":[["flour-desktop@2x.12bd8946.png","SR0t"],"SR0t"]}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss");
 },{"./sass/main.scss":"clu1"}]},{},["Focm"], null)
-//# sourceMappingURL=/donut_masterclass/src.6960245e.js.map
+//# sourceMappingURL=/donut_masterclass/src.fd8b324c.js.map
