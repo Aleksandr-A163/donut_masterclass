@@ -1,85 +1,89 @@
 .section.about {
-    // position: relative;
-    padding: 0;
-  
-    // @media screen and (min-width: $tablet) {
-    //   margin-right: 58px;
-    // }
-    // @media screen and (min-width: $desktop) {
-    //   width: 980px;
-    //   margin-right: 229px;
-    // }
+  // position: relative;
+  padding: 0;
+
+  // @media screen and (min-width: $tablet) {
+  //   margin-right: 58px;
+  // }
+  // @media screen and (min-width: $desktop) {
+  //   width: 980px;
+  //   margin-right: 229px;
+  // }
+}
+
+.card {
+  @media screen and (min-width: $tablet) {
+    // position: absolute;
+    // top: 0;
+    // left: 21px;
+    // z-index: 0;
+    // margin: 11px;
+    width: 690px;
+    display: flex;
+    align-items: center;
   }
-  
-  .card {
-    @media screen and (min-width: $tablet) {
-      // position: absolute;
-      // top: 0;
-      // left: 21px;
-      // z-index: 0;
-      // margin: 11px;
-      width: 690px;
-      display: flex;
-      align-items: center;
-    }
-  
-    @media screen and (min-width: $desktop) {
-      // position: absolute;
-      // top: 0;
-      // left: 71px;
-      width: 980px;
-      // margin: 51px;
-    }
+
+  @media screen and (min-width: $desktop) {
+    // position: absolute;
+    // top: 0;
+    // left: 71px;
+    width: 980px;
+    // margin: 51px;
   }
-  
-  .card-thumb {
-    max-width: 330px;
-    margin-right: 24px;
-  }
-  
-  .card-content {
-    max-width: 336px;
-  }
-  
-  .about__title {
-    font-family: 'Caveat Brush', sans-serif;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 65px;
-    text-align: center;
-    color: $text-color;
-  }
-  
-  .about__text {
-    font-family: $main-font;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.25;
-    letter-spacing: 0em;
-    text-align: left;
-    color: $text-color;
-  }
-  
-  .myBtn {
-    height: 65px;
-    width: 67px;
-    border: none;
-    color: $input-text-color;
-  }
-  
+}
+
+.card-thumb {
+  max-width: 330px;
+  margin-right: 24px;
+}
+
+.card-content {
+  max-width: 336px;
+}
+
+.about__title {
+  font-family: 'Caveat Brush', sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 65px;
+  text-align: center;
+  color: $text-color;
+}
+
+.about__text {
+  font-family: $main-font;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.25;
+  letter-spacing: 0em;
+  text-align: left;
+  color: $text-color;
+}
+
+.myBtn {
+  height: 65px;
+  width: 67px;
+  border: none;
+  color: $input-text-color;
+
+  // &:hover,
+  // &:focus {
+  //   background-color: $input-text-color;
+  // }
+}
+
+#more {
+  display: none;
+}
+
+@media screen and (min-width: $desktop) {
   #more {
+    display: block;
+  }
+
+  .myBtn {
     display: none;
   }
-  
-  @media screen and (min-width: $desktop) {
-    #more {
-      display: block;
-    }
-  
-    .myBtn {
-      display: none;
-    }
-  }
-  
+}
