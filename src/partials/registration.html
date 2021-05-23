@@ -21,21 +21,24 @@
             name="name"
             placeholder="Your name"
             class="registration__field"
-            pattern=""
+            pattern="[А-Яа-яA-Za-z]{2,15}"
+            title="Username must be two words separated by space."
           />
           <input
             type="tel"
             name="number"
             placeholder="Phone number"
             class="registration__field"
-            pattern=""
+            pattern="[0-9]{5,11}"
+            title="Username must be two words separated by space."
           />
           <input
             type="email"
             name="email"
             placeholder="Email"
             class="registration__field"
-            pattern=""
+            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+            title="Username must be two words separated by space."
           />
         </div>
         <div class="registration__form-container">
