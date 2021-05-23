@@ -263,18 +263,20 @@ $card-set-mob: 6px;
   cursor: pointer;
   background-color: inherit;
   border: none;
+}
+#more {
+  display: none;
+}
+@media screen and (min-width: 1280px) {
+  #more {
+    display: block;
+  }
 
-  @media screen and (min-width: 1280px) {
+  .program-btn {
     display: none;
   }
 }
-.program-hidden {
-  display: none;
 
-  @media screen and (min-width: 1280px) {
-    display: block;
-  }
-}
 // Мобильна версия //
 
 //-----------------------------------------------------------------------------------------
