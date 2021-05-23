@@ -15,8 +15,6 @@
   }
 
   @media screen and (min-width: $desktop) {
-
-
     font-size: 36px;
     line-height: 1.81;
   }
@@ -100,6 +98,10 @@
 
   @media screen and (min-width: $desktop) {
     width: 234px;
+  }
+
+  &:invalid {
+    background-color: red;
   }
 }
 .registration__field:not(:last-child) {
@@ -221,7 +223,6 @@
 
 .bg-image {
   position: relative;
-
 }
 
 .bg-donut,
