@@ -4,7 +4,7 @@ body {
   font-weight: normal;
   font-size: 16px;
   line-height: 1.71;
-  letter-spacing: 0.03;
+  letter-spacing: 0.03em;
   color: $text-color;
   background-color: $background-color;
 }
@@ -18,22 +18,6 @@ body {
   @media screen and (min-width: $mobile) {
     width: $mobile;
   }
-
-  .body__background {
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center top, center bottom 216px;
-    background-image: url(../images/bg-top.svg), url(../images/bg-bottom.svg);
-
-    @media screen and (min-width: $tablet) {
-      background-position: center top, center bottom 63px;
-    }
-
-    @media screen and (min-width: $desktop) {
-      background-position: center top, center bottom -101px;
-    }
-  }
-
   @media screen and (min-width: $tablet) {
     width: $tablet;
     padding-left: 67px;
@@ -44,6 +28,68 @@ body {
     padding-left: 229px;
     padding-right: 229px;
   }
+}
+
+.body__background {
+  background-image: url('../images/header/pic-donuts-mobile.png'),
+    url('../images/bg-top-mobile.png'), url('../images/flour-mobile.png'),
+    url('../images/bg-bottom-mobile.png');
+  background-repeat: no-repeat;
+  background-size: 117px, 100% 461px, 87px, 100% 1214px;
+  background-position: top left, top left, bottom right, bottom 216px left;
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/header/pic-donuts-mobile@2x.png')
+        url('../images/bg-top-mobile.png'),
+      url('../images/flour-mobile@2x.png'), url('../images/bg-bottom-mobile.png');
+  }
+
+  @media screen and (min-width: $tablet) {
+    background-image: url('../images/header/pic-donuts-tablet.png'),
+      url('../images/bg-top-tablet.png'), url('../images/flour-tablet.png'),
+      url('../images/bg-bottom-tablet.png');
+    background-size: 305px, 100% 622px, 148px, 100% 1260px;
+    background-position: top right 137px, top left, bottom right, bottom 63px left;
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/header/pic-donuts-tablet@2x.png'),
+        url('../images/bg-top-tablet.png'), url('../images/flour-tablet@2x.png'),
+        url('../images/bg-bottom-tablet.png');
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    background-image: url('../images/header/pic-donuts-desktop.png'),
+      url('../images/header/spoon-desktop.png'), url('../images/bg-top-desktop.png'),
+      url('../images/flour-desktop.png'), url('../images/bg-bottom-desktop.png');
+    background-size: 584px, 130px, 100% 1036px, 320px, 100% 1496px;
+    background-position: top right, 0 166px, top left, bottom right, bottom left;
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/header/pic-donuts-desktop@2x.png'),
+        url('../images/header/spoon-desktop@2x.png'), url('../images/bg-top-desktop.png'),
+        url('../images/flour-desktop@2x.png'), url('../images/bg-bottom-desktop.png');
+    }
+  }
+
+  // background-size: 100%;
+  // background-repeat: no-repeat;
+  // background-position: center top, center bottom 216px;
+  // background-image: url(../images/bg-top.svg), url(../images/bg-bottom.svg);
+
+  // @media screen and (min-width: $tablet) {
+  //   background-position: center top, center bottom 63px;
+  // }
+
+  // @media screen and (min-width: $desktop) {
+  //   background-position: center top, center bottom -101px;
+  // }
 }
 
 a {
@@ -117,5 +163,3 @@ p {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
-
