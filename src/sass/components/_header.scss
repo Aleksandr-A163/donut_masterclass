@@ -222,6 +222,7 @@
 .menu-button.is-open {
   width: 18px;
   height: 18px;
+  z-index: 10;
 }
 
 .menu-button__icon {
@@ -235,6 +236,7 @@
 
 .menu-button.is-open .menu-button__cross-icon {
   display: block;
+  z-index: 10;
 }
 
 .menu-button.is-open .menu-button__menu-icon {

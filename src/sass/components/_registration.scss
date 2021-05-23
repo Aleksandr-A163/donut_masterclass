@@ -15,9 +15,7 @@
   }
 
   @media screen and (min-width: $desktop) {
-    // z-index: 2;
-    // top: 0;
-    // left: 50%;
+
 
     font-size: 36px;
     line-height: 1.81;
@@ -223,7 +221,7 @@
 
 .bg-image {
   position: relative;
-  outline: 1px solid tomato;
+
 }
 
 .bg-donut,
@@ -236,7 +234,6 @@
 }
 
 .bg-donut {
-  border: 1px solid tomato;
   z-index: -1;
   top: 0;
   left: 0;
@@ -247,7 +244,6 @@
 }
 
 .bg-confetti {
-  border: 1px solid tomato;
   z-index: -1;
   bottom: 0;
   right: 0;
