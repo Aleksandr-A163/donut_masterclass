@@ -1,4 +1,5 @@
 .section.about {
+  padding: 0;
   background-color: transparent;
 
   @media screen and (min-width: $desktop) {
@@ -21,7 +22,7 @@
 }
 
 .card-thumb {
-  outline: 1px solid blue;
+  // outline: 1px solid blue;
   max-width: 512px;
   margin-right: 24px;
   @media screen and (min-width: $desktop) {
@@ -34,7 +35,7 @@
 }
 
 .card-content {
-  outline: 1px solid black;
+  // outline: 1px solid black;
   max-width: 336px;
   @media screen and (min-width: $desktop) {
     margin-right: 15px;
