@@ -36,9 +36,7 @@
   @media screen and (max-width: $mobile-max) {
     align-items: center;
   }
-
 }
-
 
 .navigation__list {
   @media screen and (min-width: $desktop) {
@@ -48,7 +46,7 @@
   }
 
   @media screen and (max-width: $tablet-max) {
-      display: none;
+    display: none;
   }
 }
 .navigation___item {
@@ -67,6 +65,10 @@
   line-height: 1.22;
 
   color: #2e2520;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    color: $button-color;
+  }
 }
 
 .hero__tittle {
@@ -116,7 +118,9 @@
 }
 
 .btn-registration {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   border-style: none;
   margin: 0 auto;
@@ -139,6 +143,10 @@
 
   text-align: center;
   cursor: pointer;
+  transition: transform 250ms $cubic-bezier;
+  &:hover {
+    transform: scale(1.05);
+  }
   @media screen and (min-width: $tablet) {
     margin-left: 0;
     margin-top: 26px;
@@ -173,11 +181,9 @@
 .social-links-list__item:not(:last-child) {
   padding-right: 10px;
 
-
   @media screen and (min-width: $desktop) {
     padding-right: 12px;
   }
-
 }
 
 .link-hover {
@@ -198,12 +204,10 @@
   width: 19px;
   height: 15px;
 
-
   @media screen and (min-width: $desktop) {
     width: 24px;
     height: 19px;
   }
-
 }
 
 .icon-instagram {
@@ -213,19 +217,16 @@
     width: 19px;
     height: 19px;
   }
-
 }
 
 .icon-facebook {
   width: 9px;
   height: 15px;
- 
+
   @media screen and (min-width: $desktop) {
     width: 11px;
     height: 19px;
   }
-
-
 }
 
 .menu-button {

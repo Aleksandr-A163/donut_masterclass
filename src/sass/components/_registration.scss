@@ -121,7 +121,10 @@
   color: $white-color;
   border-radius: 25px;
   width: 145px;
-
+  transition: transform 250ms $cubic-bezier;
+  &:hover {
+    transform: scale(1.05);
+  }
   @media screen and (min-width: $tablet) {
     margin-left: 25px;
     margin-bottom: 0;
