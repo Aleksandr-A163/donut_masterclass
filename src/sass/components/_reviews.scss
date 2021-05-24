@@ -52,6 +52,11 @@
   padding: 0;
   display: flex;
   margin: 0;
+  justify-content: center;
+
+  @media screen and (min-width: $tablet) {
+    justify-content: space-between;
+  }
 }
 
 .reviews-list__item {
