@@ -1,6 +1,6 @@
 
 const btnText = document.getElementById('program-btn');
-const moreText = document.getElementById('more');
+const moreText = document.getElementById('moree');
 btnText.addEventListener('click', openText);
 let isOpen = false;
 function openText() {
