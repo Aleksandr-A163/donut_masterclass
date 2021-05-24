@@ -11,4 +11,16 @@
 
     mobileMenuRef.classList.toggle("is-open");
   });
+
+const links = document.querySelectorAll('.mobile-menu__link');
+const menu = document.querySelector('.mobile-menu');
+const menuBtn = document.querySelector('.menu-button');
+links.forEach(link =>
+  link.addEventListener('click', () => {
+    if (menu.classList.contains('is-open')) {
+      menu.classList.remove('is-open');
+      menuBtn.classList.remove('is-open');
+    }
+  }),
+);
 })();

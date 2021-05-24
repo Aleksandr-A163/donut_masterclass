@@ -104,7 +104,11 @@
       font-weight: 400;
       font-size: 16px;
       line-height: 1.25;
-      color: $input-text-color;
+      // color: $input-text-color;
+
+      &:invalid {
+        background-color: red;
+      }
 
       @media screen and (min-width: 768px) {
         width: 410px;
@@ -125,6 +129,8 @@
         color: rgba(171, 129, 108, 0.5);
       }
     }
+
+
   }
 
   &__submit {

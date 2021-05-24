@@ -6,25 +6,35 @@
             <form class="footer-form">
                 <label class="footer-form__label">
                     <span class="footer-form__title">We will answer any question!</span>
-                    <input type="email" name="e-mail" placeholder="Email">
-                    <input type="text" name="question" placeholder="Type your question">
+                    <input 
+                        type="email" 
+                        name="e-mail" 
+                        placeholder="Email"
+                        pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+                        title="Email can contain (A-z, 0-9, _.- @)."
+                    />
+                    <input 
+                        type="text" 
+                        name="question" 
+                        placeholder="Type your question"
+                    />
                 </label>
                 <button class="footer-form__submit" type="submit">
                     Send
                 </button>
             </form>
             <ul class="footer-social list-no-style">
-                <li class="footer-social__item"><a class="footer-social__link" href="#" aria-label="иконка твиттер">
+                <li class="footer-social__item"><a class="footer-social__link" href="https://twitter.com" aria-label="иконка твиттер">
                     <svg class="footer-social__svg">
                         <use href="./images/icon.svg#icon-twitter"></use>
                     </svg>
                 </a></li>
-                <li class="footer-social__item"><a class="footer-social__link" href="#" aria-label="иконка инстаграм">
+                <li class="footer-social__item"><a class="footer-social__link" href="https://www.instagram.com" aria-label="иконка инстаграм">
                     <svg class="footer-social__svg">
                         <use href="./images/icon.svg#icon-instagram"></use>
                     </svg>
                 </a></li>
-                <li class="footer-social__item"><a class="footer-social__link" href="#" aria-label="иконка фейсбук">
+                <li class="footer-social__item"><a class="footer-social__link" href="https://www.facebook.com" aria-label="иконка фейсбук">
                     <svg class="footer-social__svg">
                         <use href="./images/icon.svg#icon-facebook"></use>
                     </svg>

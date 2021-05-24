@@ -1,3 +1,4 @@
+  
 .section {
   padding-top: 25px;
   padding-bottom: 30px;
@@ -52,6 +53,11 @@
   padding: 0;
   display: flex;
   margin: 0;
+  justify-content: center;
+
+  @media screen and (min-width: $tablet) {
+    justify-content: space-between;
+  }
 }
 
 .reviews-list__item {
