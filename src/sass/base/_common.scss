@@ -46,11 +46,12 @@ body {
       url('../images/bg-bottom-mobile.png');
   }
   @media screen and (min-width: $tablet) {
-    background-image: url('../images/header/pic-donuts-tablet.png'),
+    background-image: 
+    url('../images/header/pic-donuts-tablet.png'),
       url('../images/bg-top-tablet.png'), url('../images/flour-tablet.png'),
       url('../images/bg-bottom-tablet.png');
     background-size: 305px, 100% 622px, 148px, 100% 1260px;
-    background-position: top right 137px, top left, bottom right, bottom 63px left;
+    background-position: top right 147px, top left , bottom right, bottom 63px left ;
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -60,6 +61,9 @@ body {
         url('../images/bg-bottom-tablet.png');
     }
   }
+
+
+
 
   @media screen and (min-width: $desktop) {
     background-image: url('../images/header/pic-donuts-desktop.png'),
